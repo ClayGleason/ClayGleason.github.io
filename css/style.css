@@ -358,3 +358,56 @@ input{
     border:ridge #1A1717;
 }
 
+@media screen and (max-width: 500px) {
+    body {
+        display: block;
+    }
+    header a{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    footer a {
+        display: grid;
+        padding: px;
+    }
+    .container-aboutme {
+        grid-template-columns: 1fr;
+    }
+
+    .container {
+        grid-template-columns: 1fr;
+    }
+
+    #container-contact{
+        grid-template-columns: 1fr;
+
+    }
+
+    .container-goals{
+        grid-template-columns: 1fr;
+    }
+
+    #container-samples{
+        grid-template-columns: 1fr;
+    }
+
+    #div4-samples{
+        margin: 0px;
+    }
+
+    .container-current table{
+        display: flex;
+        width: 100%;
+        font-size: 12px;
+        padding-right: 40px;
+    }
+
+    h1{
+        font-size: 40px;
+
+    }
+
+    table{
+        border: none;
+    }
+}
