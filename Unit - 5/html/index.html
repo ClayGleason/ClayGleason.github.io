@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Toy Robotic Products for STEM related fields">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="https://unpkg.com/flowbite@1.5.1/dist/flowbite.js"></script>
+    <title>RoboLabs</title>
+</head>
+<body>
+    <header class="flex justify-between bg-blue-700 border-b-4 border-black p-5"> 
+        <a href="/html/index.html">
+            <img src="/images/robolab-logo.png" alt="RoboLab Logo" class="h-16">
+        </a>
+            <nav class="flex space-x-8 items-center">
+            
+                <!--Flowbite for dropdown - https://flowbite.com/docs/components/dropdowns/ -->
+                <button id="dropwDownButton" aria-label="dropDownButton" data-dropdown-toggle="drop-down-div">
+                    <img src="/images/dropDownIcon.png" alt="Drop down icon for navigation links"
+                        class="border-solid border-2 border-black rounded-lg shadow-xl hover:bg-blue-400 sm:block lg:hidden w-12">
+                </button>
+            
+                <div id="drop-down-div" class="z-10 bg-white divide-y divide-gray-100 rounded-lg shadow-sm hidden p-3 border-black border-2 border-solid">
+                    <ul aria-labelledby="dropwDownButton">
+                        <li>
+                            <a href="#" aria-label="About Us DropDown Link" class="block hover:bg-blue-400">About Us</a>
+                        </li>
+                        <li>
+                            <a href="/html/product.html" aria-label="Products DropDown Link" class="block hover:bg-blue-400">Products</a>
+                        </li>
+                        <li>
+                            <a href="/html/contact.html" aria-label="Contact DropDown Link" class="block hover:bg-blue-400">Contact</a>
+                        </li>
+                        <li>
+                            <a href="#" aria-label="Random DropDown Link" class=""> </a>
+                        </li>
+                    </ul>
+                </div>
+            
+                <!--Large screen has no drop down-->
+                <a href="#" class="hidden lg:block text-white">About Us</a>
+                <a href="/html/product.html" aria-label="Products Link" class="hidden lg:block text-white">Products</a>
+                <a href="/html/contact.html" aria-label="Contact Link" class="hidden lg:block text-white">Contact</a>
+                <a href="#" aria-label="Random Link" class="hidden lg:block text-white"> </a>
+                <a href="#" aria-label="Random Link 2">
+                    <img src="/images/account_icon.png" alt="Account Icon" class="h-12">
+                </a>
+            </nav>
+    </header>
+    <div class="bg-yellow-100">
+        <div class="lg:grid grid-cols-2 row-span-1 items-center justify-items-center text-center p-10 bg-[#FFFFFA]">
+            <div class="p-10">
+                <h1 class="m-20 text-3xl underline">RoboLabs</h1>
+                <p class="bg-green-800 p-4 border-4 border-yellow-800 text-white">Welcome to RoboLabs!  Here at RoboLabs, we want to bring fun back to the classroom!  
+                    We offer some fun, cost-efficient gadgets and gizmos for the classroom and anyone who 
+                    wants to learn a little more about robotics as well as any other fun fascinating creations!   
+                    We offer  fun gadgets and creations for everyone!  If you would like to get in contact for 
+                    educational opportunities, please reach out to us in our contact page up at the top of the page.</p>
+            </div>
+            <div class="p-10">
+                <img src="/images/classroom.jpg" alt="Image of a teacher with her students"
+                    class="border-2 border-black rounded-lg shadow-xl"
+                >
+            </div>
+        </div>
+        
+        <div class="lg:flex items-center justify-evenly m-20 border-2 border-black lg:p-20 md:p-10 sm:p-10
+                    md:grid md:grid-rows-2 md:justify-items-center
+                    sm:grid sm:grid-rows-2 sm: justify-items-center
+                    bg-purple-500">
+            <div class="max-w-sm p-10 border-4 border-yellow-800 text-center m-5
+                        md:m-10
+                        sm:m-5
+                        bg-green-800">
+                <p class="text-white">“We just got some of the new RoboBuddies and our 
+                    kids are loving them!”</p>
+                    <p class="text-white mt-2">- North Mahaska High School</p>
+            </div>
+            <div class="max-w-sm p-10 border-4 border-yellow-800 text-center m-5
+                        md:m-10
+                        sm:m-5
+                        bg-green-800">
+                <p class="text-white">“The RoboLab has helped us incorporate robotics into 
+                    our Advanced Learners program!”</p>
+                    <p class="text-white mt-2">- Oskaloosa Public High School</p>
+            </div>
+            <div class="max-w-xs p-10 border-4 border-yellow-800 text-center m-5
+                        md:m-10
+                        sm:m-5
+                        bg-green-800">
+                <p class="text-white">“I've personally been enjoying the new RoboSpecs package!”</p>
+                <p class="text-white mt-2">- John Doe</p>
+            </div>
+        </div>
+    </div>
+    <footer class="bg-blue-700 text-white border-t-2 border-black">
+        <div class="flex justify-evenly items-center mt-8">
+            <a href="/html/index.html">
+                <img src="/images/robolab-logo.png" alt="RoboLab Logo" class="h-12">
+            </a>
+            <a class="underline" href="#">About Us</a>
+            <a class="underline" href="/html/product.html">Products</a>
+            <a class="underline" href="/html/contact.html">Contact</a>
+            <a href="#">
+                <img src="/images/facebook-logo.png" alt="Facebook Logo" class="h-12">
+            </a>
+        </div>
+        <div class="flex justify-evenly p-10 flex-wrap text-center">
+            <p class="m-2">c2025 RoboLabs, All rights reserved</p>
+            <a href="#" class="m-2">Privacy Policy</a>
+            <a href="#" class="m-2">Terms of Service</a>
+        </div>
+    </footer>
+</body>
+</html>

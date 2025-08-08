@@ -1,0 +1,17 @@
+@font-face {
+    font-family: Mozilla;
+    src: url(/assets/MozillaHeadline_Condensed-Light.ttf);
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(/assets/RobotoMono-Bold.ttf);
+}
+
+td,tr, input{
+    font-family: Mozilla;
+}
+
+p,a, h1, h2{
+    font-family: Roboto;
+}

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Toy Robotic Products for STEM related fields">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="https://unpkg.com/flowbite@1.5.1/dist/flowbite.js"></script>
+    <title>RoboLabs</title>
+</head>
+<body class="bg-yellow-100">
+    <header class="flex justify-between bg-blue-700 text-white border-b-4 border-black p-5"> 
+        <a href="/html/index.html">
+            <img src="/images/robolab-logo.png" alt="RoboLab Logo" class="h-16">
+        </a>
+            <nav class="flex space-x-8 items-center">
+            
+                <!--Flowbite for dropdown - https://flowbite.com/docs/components/dropdowns/ -->
+                <button id="dropwDownButton" aria-label="dropDownButton" data-dropdown-toggle="drop-down-div">
+                    <img src="/images/dropDownIcon.png" alt="Drop down icon for navigation links"
+                        class="border-solid border-2 border-black rounded-lg shadow-xl hover:bg-blue-400 sm:block lg:hidden w-12">
+                </button>
+            
+                <div id="drop-down-div" class="z-10 bg-white divide-y divide-gray-100 rounded-lg shadow-sm hidden p-3 border-black border-2 border-solid">
+                    <ul aria-labelledby="dropwDownButton">
+                        <li>
+                            <a href="#" aria-label="About Us DropDown Link" class="block hover:bg-blue-400">About Us</a>
+                        </li>
+                        <li>
+                            <a href="/html/product.html" aria-label="Products DropDown Link" class="block hover:bg-blue-400">Products</a>
+                        </li>
+                        <li>
+                            <a href="/html/contact.html" aria-label="Contact DropDown Link" class="block hover:bg-blue-400">Contact</a>
+                        </li>
+                        <li>
+                            <a href="#" aria-label="Random DropDown Link" class=""> </a>
+                        </li>
+                    </ul>
+                </div>
+            
+                <!--Large screen has no drop down-->
+                <a href="#" class="hidden lg:block">About Us</a>
+                <a href="/html/product.html" aria-label="Products Link" class="hidden lg:block">Products</a>
+                <a href="/html/contact.html" aria-label="Contact Link" class="hidden lg:block">Contact</a>
+                <a href="#" aria-label="Random Link" class="hidden lg:block"> </a>
+                <a href="#" aria-label="Random Link 2">
+                    <img src="/images/account_icon.png" alt="Account Icon" class="h-12">
+                </a>
+            </nav>
+    </header>
+    <div class="m-20 items-center">
+        <h1 class="flex justify-center underline text-3xl">Products</h1>
+        <div class="flex flex-row flex-wrap justify-center m-10">
+            <label for="search_products">
+                <img class="w-12 p-2" src="/images/searchIcon.webp" alt="Search Icon">
+            </label>
+            <input class="border border-black m-2" type="text" id="search_products" name="search_products" placeholder="Search">
+        </div>
+        
+        <div class="text-center md:grid md:grid-rows-3 md:grid-cols-2 
+                    lg:grid-rows-2 lg:grid-cols-3
+                    border-4 border-yellow-800 lg:p-32 md:p-16 sm:p-10
+                    bg-green-800 text-white">
+            <!--Cards -->
+            <div class="flex flex-col items-center justify-center p-10">
+                <img src="/images/the-sojourner.jpg" alt="Image of the robot product: 'The Sojourner'"
+                    class="lg:w-64 lg:h-auto  md:w-32 h-32 border-solid border-2 border-black rounded-lg shadow-xl m-2">
+                <p class="underline m-1"> The Sojourner</p>
+                <p>Experience Level:</p>
+                <p>Intermediate</p>
+                <p class="m-1">Cost: $74.99</p>
+            </div>
+            <div class="flex flex-col items-center justify-center p-10">
+                <img src="/images/robo-2000.webp" alt="Image of the robot product: 'Robo-2000'"
+                    class="lg:w-64 lg:h-auto  md:w-32 h-32 border-solid border-2 border-black rounded-lg shadow-xl m-2">
+                <p class="underline m-1">Robo-2000</p>
+                <p >Experience Level:</p>
+                <p>Advanced</p>
+                <p class="m-1">Cost: $174.99</p>
+            </div>
+            <div class="flex flex-col items-center justify-center p-10">
+                <img src="/images/terminator-v01.jpg" alt="Image of the robot product: 'Terminator V.01'"
+                    class="lg:w-64 lg:h-auto  md:w-32 h-32 border-solid border-2 border-black rounded-lg shadow-xl m-2">
+                <p class="underline m-1 "> Terminator V.01</p>
+                <p>Experience Level:</p>
+                <p>Intermediate</p>
+                <p class="m-1">Cost: $99.99</p>
+            </div>
+            <div class="flex flex-col items-center justify-center p-10">
+                <img src="/images/wheelie-the-robot.jpg" alt="Image of the robot product: 'Wheelie the Robot'"
+                    class="lg:w-64 lg:h-auto  md:w-32 h-32 border-solid border-2 border-black rounded-lg shadow-xl m-2">
+                <p class="underline m-1">Wheelie the Robot</p>
+                <p>Experience Level:</p>
+                <p>Beginner</p>
+                <p class="m-1">Cost: $45.99</p>
+            </div>
+            <div class="flex flex-col items-center justify-center p-10">
+                <img src="/images/blocky.jpg" alt="Image of the robot product: 'Blocky'"
+                    class="lg:w-64 lg:h-auto  md:w-32 h-32 border-solid border-2 border-black rounded-lg shadow-xl m-2">
+                <p class="underline m-1">Blocky</p>
+                <p>Experience Level:</p>
+                <p>Beginner</p>
+                <p class="m-1">Cost: $24.99</p>
+             </div>
+            <div class="flex flex-col items-center justify-center p-10">
+                <img src="/images/tankster.jpg" alt="Image of the robot product: 'Tankster'"
+                    class="lg:w-64 lg:h-auto  md:w-32 h-32 border-solid border-2 border-black rounded-lg shadow-xl m-2">
+                <p class="underline m-1">Tankster</p>
+                <p>Experience Level:</p>
+                <p>Intermediate</p>
+                <p class="m-1">Cost: $64.99</p>
+             </div>
+        </div>
+        <div class="text-xl p-5 overflow-x-auto flex text-center md:justify-center">
+            <table class="border-black border-2 border-solid">
+                <tr class="border h-16 w-32">
+                    <th class="border">Name</th>
+                    <td class="p-1">The Sojourner</td>
+                    <td class="p-1">Robo-2000</td>
+                    <td class="p-1">Terminator V.01</td>
+                    <td class="p-1">Wheelie the Robot</td>
+                    <td class="p-1">Blocky</td>
+                    <td class="p-1">Tankster</td>
+                </tr>
+                <tr class="border h-16 w-32">
+                    <th class="border">Experience Level</th>
+                    <td class="p-1">Intermediate</td>
+                    <td class="p-1">Advanced</td>
+                    <td class="p-1">Intermediate</td>
+                    <td class="p-1">Beginner</td>
+                    <td class="p-1">Beginner</td>
+                    <td class="p-1">Intermediate</td>
+                </tr>
+                <tr class="border h-16 w-32">
+                    <th class="border">Cost</th>
+                    <td class="p-1">$74.99</td>
+                    <td class="p-1">$174.99</td>
+                    <td class="p-1">$99.99</td>
+                    <td class="p-1">$45.99</td>
+                    <td class="p-1">$24.99</td>
+                    <td class="p-1">$64.99</td>
+                </tr>
+                <tr class="border h-16 w-32">
+                    <th class="border">Quantity</th>
+                    <td class="p-1">100</td>
+                    <td class="p-1">500</td>
+                    <td class="p-1">350</td>
+                    <td class="p-1">400</td>
+                    <td class="p-1">250</td>
+                    <td class="p-1">500</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <footer class="bg-blue-700 text-white border-t-2 border-black">
+        <div class="flex justify-evenly items-center mt-8">
+            <a href="/html/index.html">
+                <img src="/images/robolab-logo.png" alt="RoboLab Logo" class="h-12">
+            </a>
+            <a class="underline" href="#">About Us</a>
+            <a class="underline" href="product.html">Products</a>
+            <a class="underline" href="contact.html">Contact</a>
+            <a href="#">
+                <img src="/images/facebook-logo.png" alt="Facebook Logo" class="h-12">
+            </a>
+        </div>
+        <div class="flex justify-evenly p-10 flex-wrap text-center">
+            <p class="m-2">c2025 RoboLabs, All rights reserved</p>
+            <a href="#" class="m-2">Privacy Policy</a>
+            <a href="#" class="m-2">Terms of Service</a>
+        </div>
+    </footer>
+</body>
+</html>
